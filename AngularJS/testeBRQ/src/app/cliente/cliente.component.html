@@ -1,0 +1,51 @@
+<form (submit)="addCliente(nome,documento,endereco,cidade,complemento,pais)">
+<div>
+  <label for="nome">Nome</label>
+  <input type="text" name="nome" #nome/>
+</div>
+<div>
+  <label for="documento">Documento</label>
+  <input type="text" name="documento" #documento/>
+</div>
+<div>
+  <label for="endereco">Endereco</label>
+  <input type="text" name="endereco" #endereco/>
+</div>
+<div>
+  <label for="cidade">Cidade</label>
+  <input type="text" name="cidade" #cidade/>
+</div>
+<div>
+  <label for="complemento">Complemento</label>
+  <input type="text" name="complemento" #complemento/>
+</div>
+<div>
+  <label for="pais">Pais</label>
+  <input type="text" name="pais" #pais/>
+</div>
+
+  <button>Adicionar Cliente</button>
+
+</form>
+
+<hr/>
+
+<table>
+<thead>
+  <tr>
+    <th>Id</th>
+    <th>Titulo</th>
+  </tr>
+</thead>
+<tbody>
+<tr *ngFor="let post of posts">
+  <td>{{post.id}}</td>
+  <td>{{post.title}}</td>
+  <!-- <input type='hidden' value='{{post.userId}}'/>
+  <input type='hidden' value='{{post.id}}'/>
+  <h3>{{post.title}}</h3>
+  <span>{{post.body}}</span> -->
+  </tr>
+</tbody>
+</table>
+
